@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: heroes
+  data:
+    mongodb:
+      authentication-database: ${DATASOURCE_AUTHENTICATION:admin}
+      username: ${DATASOURCE_USERNAME:usr_heroes}
+      password: ${DATASOURCE_PASSWORD:heroes2022.,*}
+      database: ${DATASOURCE_DATABASE:test}
+      port: ${DATASOURCE_PORT:27019}
+      host: ${DATASOURCE_HOST:localhost}
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL:
+          TRACE
+        type:
+          descriptor:
+            sql:
+              BasicBinder:
+                TRACE
+
+# Server configuration
+server:
+  port: ${PORT_APP:8080}
+  servlet:
+    context-path: /api
+    session:
+      timeout: 30s

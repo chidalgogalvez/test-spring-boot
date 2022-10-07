@@ -3,7 +3,12 @@ spring:
     name: heroes
   data:
     mongodb:
-      uri: mongodb+srv://rn_user:oZhWZ8xSbDZi64lO@cursocluster.uhjeg.mongodb.net/cursoRN?retryWrites=true&w=majority
+      authentication-database: ${DATASOURCE_AUTHENTICATION:admin}
+      username: ${DATASOURCE_USERNAME:usr_heroes}
+      password: ${DATASOURCE_PASSWORD:heroes2022.,*}
+      database: ${DATASOURCE_DATABASE:test}
+      port: ${DATASOURCE_PORT:27019}
+      host: ${DATASOURCE_HOST:localhost}
 
 logging:
   level:

@@ -12,7 +12,7 @@ test para aplicar a trabajo
 ## docker compose desde terminal
 $ docker-compose up -d
 
-## Swagger
+## Swagger - ui
 http://localhost:8080/api/swagger-ui/index.html
 
 

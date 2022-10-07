@@ -60,7 +60,7 @@ public class ClientServiceImpl implements ClientService {
 
     clientRepository.deleteByRut(rut);
 
-    return Constants.DOCUMENT_DELETED;
+    return Constants.DELETED_DOCUMENT;
   }
 
   @Override

@@ -1,11 +1,14 @@
 package cl.heroes.client.util;
 
+import lombok.experimental.UtilityClass;
+
+@UtilityClass
 public class Constants {
 
   public static final String THE_RUT_ALREADY_IS_USED = "The rut already is used !!!";
   public static final String THE_RUT_NOT_EXIST = "The rut does not exist!!!";
   public static final String THE_EMAIL_ALREADY_IS_USED = "The email already is used !!!";
-  public static final String DOCUMENT_DELETED = "Borrado Exitosamente!!!";
+  public static final String DELETED_DOCUMENT = "Erased Successfully !!!";
 
   // Swagger
 

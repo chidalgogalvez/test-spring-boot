@@ -33,7 +33,7 @@ public class SecurityConfiguration {
         .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
 
     http.authorizeRequests()
-        .antMatchers("/client/**","/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
+        .antMatchers("/client/**","/actuator/**","/v3/api-docs/**", "/swagger-ui/**", "/swagger-ui.html").permitAll()
         .anyRequest().authenticated();
 
     return http.build();

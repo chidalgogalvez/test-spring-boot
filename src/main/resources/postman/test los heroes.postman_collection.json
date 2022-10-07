@@ -52,6 +52,24 @@
 			"response": []
 		},
 		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{HOST}}/actuator/health",
+					"host": [
+						"{{HOST}}"
+					],
+					"path": [
+						"actuator",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "delete by rut",
 			"request": {
 				"method": "DELETE",
